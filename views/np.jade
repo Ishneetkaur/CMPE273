@@ -1,0 +1,10 @@
+table(border = "2" align = "center" size = "100")
+ thead
+  tr: th Brand
+  tbody
+ - for (var i = 0; i < npproduct.length; ++i) {
+    tr
+    td      
+     a(href='/store/np/' + npproduct[i].imgn) #{npproduct[i].Brand}
+    br
+ - }

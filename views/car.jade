@@ -1,0 +1,10 @@
+table(border = "2" align = "center" size = "100")
+ thead 
+ tr: th Brand
+ tbody
+ - for (var i = 0; i < carproduct.length; ++i) {
+    tr
+    td      
+     a(href='/store/car/' + carproduct[i].imgn) #{carproduct[i].make}
+    br
+ - }

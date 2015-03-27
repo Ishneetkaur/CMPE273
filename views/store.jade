@@ -1,0 +1,11 @@
+div
+ table
+  thead
+   tr: th Products
+   tbody
+- for (var i = 0; i < product.length; ++i) {
+     tr
+      td      
+       a(href='/store/' + product[i].nxt) #{product[i].name}
+      br
+- }

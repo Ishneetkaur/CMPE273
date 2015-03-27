@@ -1,0 +1,57 @@
+head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title dCatalog
+    meta(name='keywords', content='eCommerce')
+    meta(name='description', content='Cars,Nail Polish,TV')
+    link(href='./stylesheets/templatemo_style.css', rel='stylesheet', type='text/css')
+  body
+    #templatemo_container
+      #templatemo_header_section
+        #templatemo_menu
+          ul
+            li
+              a(href='/store/tv') TVs
+            li
+              a(href='/store/np') Nail Polish
+            li
+              a(href='/store/car') Cars 
+      #templatemo_content
+        #templatemo_left_section
+          .templatemo_ver_menu
+            ul
+              li
+                a.current(href='/store') Home
+              li
+                a(href='/store/' + product[0].nxt)  #{product[0].name}
+              li
+                a(href='/store/' + product[1].nxt)  #{product[1].name}
+              li
+                a(href='/store/' + product[2].nxt)  #{product[2].name}
+      #templatemo_right_section
+          .templatemo_section_box_1
+            h3 Products   
+            br
+            h3 We have many products.
+            br
+            h3 Give it a look.
+          .templatemo_section_box_1
+            h3 Come and look for your favorite products
+            br
+            h3 Insanely Easy!
+            br 
+            h3 Images included for you!
+            br  
+          .templatemo_section_box_1
+            h3 Worthwhile Information regarding different products!
+            br
+            h3 Multiple brands for various categories!
+            br
+            h3 Reviews
+        #templatemo_footer_section
+          Created by Ishneet Kaur
+    div(align='center')
+      
+  section.content
+    div(ng-view)
+    
+    
